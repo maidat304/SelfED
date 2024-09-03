@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        balloon: "url('./src/assets/welcome-bg.webp')",
+      },
+    },
   },
   plugins: [],
 };

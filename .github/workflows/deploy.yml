@@ -12,18 +12,18 @@ jobs:
 
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v3 # Cập nhật từ v2 lên v3
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3 # Cập nhật từ v1 lên v3
+        uses: actions/setup-node@v3
         with:
-          node-version: '20' # Sử dụng Node.js phiên bản 20
+          node-version: '20.10.0' # Sử dụng Node.js phiên bản 20.10.0
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: yarn install # Sử dụng yarn để cài đặt dependencies
 
       - name: Build project
-        run: npm run build
+        run: yarn build # Sử dụng yarn để build dự án
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2

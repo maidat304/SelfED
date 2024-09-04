@@ -32,7 +32,7 @@ function Header() {
           </svg>
         </button>
         <Link to="/login">
-          <button className="pb-[20px] pt-[20px] px-[37px] rounded-full bg-[#4A2574] flex items-center gap-[20.289px]">
+          <button className="mt-1 pb-[20px] pt-[20px] px-[37px] rounded-full bg-[#4A2574] flex items-center gap-[20.289px]">
             <span className="text-white text-[24px]">
               Sử dụng tại trình duyệt
             </span>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Login() {
   return (
     <div className="flex">
@@ -28,7 +30,10 @@ function Login() {
         <button className="bg-ornament-color text-white mt-10 w-48 h-12 rounded-xl">
           Đăng nhập
         </button>
-        <span className="text-[#4A2574] text-[16px] font-normal mt-20 italic">Quên mật khẩu ?</span>
+        <div className="text-[#4A2574] text-[16px] font-normal mt-20 italic text-center">
+          <p>Chưa có tài khoản? <Link to="/register" className="font-bold">Đăng ký ngay!</Link></p>
+          <p>Quên mật khẩu?</p>
+        </div>
       </div>
       <div className="bg-custom-gradient h-screen w-screen" />
     </div>
